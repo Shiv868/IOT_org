@@ -35,14 +35,19 @@
     .device-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
-            margin-top:180px;
+            justify-content: center;
+            margin-top:80px;
+            gap: 50px;
             
             
         }
 
         .device {
             margin: 20px;
+            background-color: aqua;
+            padding: 30px;
+            border: solid 2px rgb(17, 29, 4);
+            border-radius: 10px;
         }
 
         .device img {
@@ -58,6 +63,7 @@
 
         .flx{
           display: flex;
+          justify-content: center;
         }
 
         button{
@@ -66,16 +72,12 @@
           border-radius: 50%;
         }
 
-        .status{
-          position: relative;
-          top: 25%;
-          left: 40%;
-        }
+
   </style>
 </head>
 <body>
-  <h1>Electrical Appliances Monitoring</h1>
-  <h2 class="status">Current Status:</h2>
+  <h1>Electrical Appliances Monitoring</h1><br><br><br>
+ <center> <h2 class="status">Current Status:</h2></center>
   <div class="flx">
 
     <div id="electricalData"></div>
